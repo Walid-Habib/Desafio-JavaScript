@@ -1,0 +1,183 @@
+.body {
+    padding: 5px;
+}
+
+.cardex {
+    display: grid;
+    grid-template-areas: "item total";
+    grid-template-columns: 200px 200px;
+    cursor: default;
+}
+
+.card {
+    /* grid-area: "item"; */
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: rgb(124, 179, 79);
+    text-align: center;
+    color: white;
+}
+
+.xresul {
+    /* grid-area: "total"; */
+    position: relative;
+    left: 0;
+    top: 0;
+    border: 1px solid black;
+    color: black;
+    align-self: center;
+    text-align: center;
+    margin: 0 10px;
+    line-height: 0%;
+    font-weight: bold;
+}
+
+.ximgP {
+    margin-top: 20px;
+    width: 60%;
+    /* animation: rotar 1.5s alternate; */
+    /* animation-delay: 3s; */
+}
+.rotacion {
+    animation: rotar 1s alternate;
+}
+
+@keyframes rotar {
+      0% {rotate: 0deg;}
+     20% {rotate: 10deg;}
+     40% {rotate: -15deg;}
+     60% {rotate: 15deg;}
+     80% {rotate: -10deg;}
+    100% {rotate: 0deg;}
+}
+
+.xnomP {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.xcantP {
+    margin: 10px;
+    width: 5rem;
+}
+
+.xgamaC {
+    display: flex;
+    margin: 0px 25px;
+    cursor: pointer;
+}
+
+.xcolorNe {
+    background: black;
+    margin: 10px auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.xcolorNe:hover {
+    scale: 1.3;
+}
+
+.xcolorAz {
+    background: blue;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.xcolorAz:hover {
+    scale: 1.3;
+}
+
+.xcolorVe {
+    background: green;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.xcolorVe:hover {
+    scale: 1.3;
+}
+
+.xcolorAm {
+    background: yellow;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.xcolorAm:hover {
+    scale: 1.3;
+}
+
+.xcolorRo {
+    background: pink;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.xcolorRo:hover {
+    scale: 1.3;
+}
+
+.xprecio {
+    margin: 10px;
+}
+
+.xcalcT {
+    margin: 10px;
+    background: orange;
+    cursor: pointer;
+}
+
+.xcarrito {
+    /* position: absolute; */
+    margin: 5px;
+    height: 80px;
+    width: 80px;
+    z-index: -1;
+}
+
+/* .xitem {
+    height: 35px;
+    width: 35px;
+    background: orange;
+    shape-outside: circle();
+    clip-path: circle();
+} 
+*/
+
+/* Insertar la cantidad dentro del circulo de color, sobre el carrito */
+.circulo-carrito {
+    margin: 15px 76px;
+    width: 35px;
+    border-radius: 50%;
+    background: lightsalmon;
+    line-height: 0;
+    position: absolute;
+    z-index: 1;
+  }
+   
+  .circulo-carrito::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+   
+  .cantidad-circulo {
+    position: absolute;
+    color: red;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }

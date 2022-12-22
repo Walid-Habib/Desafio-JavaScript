@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de producto</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+
+<body>
+    <main class="cardex">
+
+        <section class="card">
+            <img id="producto" class="ximgP" src="../DesafioJS/assets/img/LaptopNe.png" alt="">
+            <p class="xnomP">Laptop Gamer AMD</p>
+            <input id="cantP" class="xcantP" type="number" min="1" max="10" placeholder="Cantidad" required
+                onkeypress="return (event.charCode >= 48 /* '0' */ && event.charCode <= 57 /* '9' */)"
+                onkeydown="return false">
+            <div class="xgamaC">
+                <figure class="xcolorNe"></figure>
+                <figure class="xcolorAz"></figure>
+                <figure class="xcolorVe"></figure>
+                <figure class="xcolorRo"></figure>
+                <figure class="xcolorAm"></figure>
+            </div>
+            <p class="xprecio">Precio: $ 40.000</p>
+            <button onclick="calculo()" class="xcalcT">Calcular Total</button>
+        </section>
+
+        <section class="xresul">
+            <div class="circulo-carrito">
+                <div class="cantidad-circulo">0</div>
+            </div>
+            <img class="xcarrito" src="./assets/img/carrito.png" alt="">
+            <p>Total a pagar: $ <span>0</span></p>
+        </section>
+
+    </main>
+    <script src="./assets/js/js.js"></script>
+</body>
+
+</html>
